@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <h2>Customer Registration</h2>
+    </div>
+    <div class="card-body">
+        <form id="registrationForm">
+            <label for="title">Title:</label>
+            <select id="title" name="title">
+                <option value="mr">Mr</option>
+                <option value="ms">Ms</option>
+                <option value="mrs">Mrs</option>
+            </select>
+
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" maxlength="50" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <div style="display: flex;">
+                <select id="countryCode" name="countryCode">
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+91">+91</option>
+                </select>
+                <input type="tel" id="mobileNumber" name="mobileNumber" maxlength="10"   pattern="[0-9]{10}" required>
+            </div>
+
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" minlength="5" maxlength="20" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="30" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" maxlength="30" required>
+
+            <div class="button-container">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <div class="success-message" id="successMessage" style="display: none;">
+            <p>Consumer Registration successful.</p>
+            <p>Customer ID: <span id="customerId"></span></p>
+            <p>Name: <span id="ackCustomerName"></span></p>
+            <p>Email: <span id="ackEmail"></span></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

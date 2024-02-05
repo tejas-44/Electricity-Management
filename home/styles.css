@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00bcd4, #ff6ec4);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background: #ffffff; /* White background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.logo h1 {
+    background: linear-gradient(to right, #00bcd4, #ff6ec4); /* Gradient text color */
+    -webkit-background-clip: text; /* Clip text to background */
+    color: transparent; /* Set text color as transparent to show gradient */
+    margin: 0;
+    padding-left: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    background: linear-gradient(to right, #00bcd4, #ff6ec4); /* Gradient text color */
+    -webkit-background-clip: text; /* Clip text to background */
+    color: transparent; /* Set text color as transparent to show gradient */
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: none; /* Remove gradient on hover */
+    color: #fff3e6;
+}
+.logoutBTN {
+    padding-right:20px ;
+}
+
+#logoutBtn {
+    padding: 10px;
+    background: linear-gradient(to right, #00bcd4, #ff6ec4);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#logoutBtn:hover {
+    background: linear-gradient(to right, #00a3bf, #ff3385);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+#logout {
+    color: #ff6ec4;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#logout:hover {
+    color: #ff3385;
+}
+
+.bills-section {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(to right, #00bcd4, #ff6ec4);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00a3bf, #ff3385);
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}

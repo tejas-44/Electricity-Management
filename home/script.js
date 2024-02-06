@@ -10,5 +10,6 @@ document.getElementById('logoutBtn').addEventListener('click', function () {
 
 document.getElementById('proceedToPay').addEventListener('click', function () {
     // Handle proceeding to payment, redirect to payment screen
-    alert("Proceed to Pay clicked. Redirect to Payment screen.");
+    window.location.href = 'paybill/index.html';
+
 });

@@ -82,50 +82,98 @@ body {
     flex-direction: column;
 }
 
+/* Add or modify styles as needed */
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Heading inside the card */
+.card h2 {
+    color: #333333;
+}
+
+/* Form inside the card */
+.card form {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+/* Table inside the card */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.card th,
+.card td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.card th {
+    background: linear-gradient(to right, #00bcd4, #ff6ec4);
+    color: #ffffff;
+}
+
+.card tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Button inside the card */
+.card button {
+    padding: 10px;
+    background: linear-gradient(to right, #00bcd4, #ff6ec4);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card button:hover {
+    background: linear-gradient(to right, #00a3bf, #ff3385);
+}
+
 .user-info {
    
     color: #ffffff;
     font-size: 30px;
 }
 
-.bill-table {
+
+/* Add or modify styles as needed */
+.bill-details {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-.bill-table th,
-.bill-table td {
+.bill-details th,
+.bill-details td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-.bill-table th {
+.bill-details th {
     background: linear-gradient(to right, #00bcd4, #ff6ec4);
     color: #ffffff;
 }
 
-.bill-table tbody tr:hover {
+.bill-details tbody tr:hover {
     background-color: #f5f5f5;
 }
 
-#logout {
-    color: #ff6ec4;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-#logout:hover {
-    color: #ff3385;
-}
-
-.bills-section {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    
+input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 button {
@@ -142,24 +190,7 @@ button:hover {
     background: linear-gradient(to right, #00a3bf, #ff3385);
 }
 
-/* Media Queries for responsiveness */
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .menu {
-        margin-top: 10px;
-    }
-
-    .menu li {
-        margin: 0;
-    }
-
-    .content {
-        padding: 20px;
-    }
+#makePaymentBtn,
+#downloadBtn {
+    margin-top: 20px;
 }

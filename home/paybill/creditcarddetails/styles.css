@@ -1,3 +1,5 @@
+/* Add or modify styles as needed */
+
 body {
     margin: 0;
     padding: 0;
@@ -75,6 +77,7 @@ body {
     background: linear-gradient(to right, #00a3bf, #ff3385);
 }
 
+
 .content {
     flex: 1;
     padding: 20px;
@@ -88,44 +91,47 @@ body {
     font-size: 30px;
 }
 
-.bill-table {
-    width: 100%;
-    border-collapse: collapse;
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-.bill-table th,
-.bill-table td {
+.card h2 {
+    color: #333333;
+}
+
+.card form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
     border: 1px solid #ddd;
-    text-align: left;
+    border-radius: 5px;
 }
 
-.bill-table th {
-    background: linear-gradient(to right, #00bcd4, #ff6ec4);
-    color: #ffffff;
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00bcd4;
 }
 
-.bill-table tbody tr:hover {
-    background-color: #f5f5f5;
-}
-
-#logout {
-    color: #ff6ec4;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-#logout:hover {
-    color: #ff3385;
-}
-
-.bills-section {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    
+input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 button {
@@ -140,26 +146,4 @@ button {
 
 button:hover {
     background: linear-gradient(to right, #00a3bf, #ff3385);
-}
-
-/* Media Queries for responsiveness */
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .menu {
-        margin-top: 10px;
-    }
-
-    .menu li {
-        margin: 0;
-    }
-
-    .content {
-        padding: 20px;
-    }
 }

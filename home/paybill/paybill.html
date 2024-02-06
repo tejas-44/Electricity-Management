@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electricity Bill Management</title>
+    <title>Pay Bill</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,31 +30,39 @@
             <p>Welcome, <strong><span id="username">John Doe</span></strong></p>
         </div>
 
-        <div class="bills-section">
-            <h2>View Bills</h2>
-            <!-- Include your bill view section here -->
-            <!-- It should allow selecting bills and calculate total amount -->
-            <table class="bill-table">
+        <div class="card">
+            <h2>Bill Details</h2>
+            <table class="bill-details">
                 <thead>
                     <tr>
-                        <th>Select</th>
-                        <th>Consumer Name</th>
-                        <th>Due Amount (₹)</th>
-                        <th>Payable Amount (₹)</th>
+                        <th>Bill Amount</th>
+                        <th>Total Payable Amount</th>
+                        <th>PG Charge</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- Example row, replace with dynamic data from the database -->
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Consumer 1</td>
                         <td>500</td>
                         <td>550</td>
+                        <td>10</td>
                     </tr>
                     <!-- Add more rows as needed -->
                 </tbody>
             </table>
-            <button id="proceedToPay">Proceed to Pay</button>
+        </div>
+
+        <div class="card">
+            <label for="paymentMode">Select Mode of Payment:</label>
+            <label for="paymentMode">Select Mode of Payment:</label>
+            <input type="radio" id="debit" name="paymentMode" value="debit">
+            <label for="debit">Debit</label>
+            <input type="radio" id="credit" name="paymentMode" value="credit">
+            <label for="credit">Credit</label>
+<br>
+<br>
+            <button id="payNowBtn">Pay Now</button>
+            <a href="index.html"><button id="backToHomeBtn">Back to Home</button></a>
         </div>
     </div>
 </div>

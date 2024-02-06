@@ -10,5 +10,7 @@ function showAcknowledgment() {
     // Dummy values for demonstration
     document.getElementById('customerId').innerText = Math.floor(1000000000000 + Math.random() * 9000000000000);
     document.getElementById('ackCustomerName').innerText = document.getElementById('customerName').value;
+    document.getElementById('ackMobileNumber').innerText = document.getElementById('mobileNumber').value;
+
     document.getElementById('ackEmail').innerText = document.getElementById('email').value;
 }

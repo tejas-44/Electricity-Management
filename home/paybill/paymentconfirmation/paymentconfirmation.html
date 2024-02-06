@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <h1>Electricity Bill</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pay Bill</a></li>
+            <li><a href="#">Register Complaint</a></li>
+            <li><a href="#">Complaint Status</a></li>
+        </ul>
+        <div  class="logoutBTN">
+            <button id="logoutBtn">Logout</button>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        <div class="user-info">
+            <p>Welcome, <strong> <span id="username">John Doe</span></strong></p>
+        </div>
+
+        <div class="card">
+            <h2>Payment Confirmation</h2>
+            <p>Transaction successful!</p>
+            <p>Transaction Details:</p>
+            <ul>
+                <li>Transaction ID: 123456789</li>
+                <li>Amount Paid: ₹550</li>
+                <!-- Add more transaction details as needed -->
+            </ul>
+            <a href="#" download><button id="downloadBtn">Download Receipt</button></a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
